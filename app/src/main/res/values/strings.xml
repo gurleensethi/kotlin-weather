@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">KotlinWeather</string>
+    <string name="app_name">Kotlin Weather</string>
     <string name="celcuis_temperature">%1$s\u00B0</string>
 </resources>
