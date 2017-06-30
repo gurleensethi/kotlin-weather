@@ -23,3 +23,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep class com.google.gson.** { *; }
+-keep class com.google.inject.** { *; }
+-keep class org.apache.http.** { *; }
+-keep class org.apache.james.mime4j.** { *; }
+-keep class javax.inject.** { *; }
+-keep class retrofit.** { *; }
+-dontwarn rx.**
+-keep class com.example.testobfuscation.** { *; }
+-keepattributes Signature
+-keep class sun.misc.Unsafe { *; }
+-ignorewarnings
+-keep class * {
+    public private *;
+}
