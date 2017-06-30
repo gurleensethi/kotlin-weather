@@ -1,6 +1,6 @@
 package app.com.thetechnocafe.kotlinweather.Networking
 
-import app.com.thetechnocafe.kotlinweather.Constants
+import app.com.thetechnocafe.kotlinweather.Consts.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

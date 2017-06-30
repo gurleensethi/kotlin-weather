@@ -1,10 +1,10 @@
 package app.com.thetechnocafe.kotlinweather.Home
 
 import android.content.Context
-import app.com.thetechnocafe.kotlinweather.Constants
+import app.com.thetechnocafe.kotlinweather.Consts.Constants
 import app.com.thetechnocafe.kotlinweather.Models.WeatherData
 import app.com.thetechnocafe.kotlinweather.Networking.NetworkService
-import app.com.thetechnocafe.kotlinweather.Secrets
+import app.com.thetechnocafe.kotlinweather.Consts.Secrets
 import com.google.gson.Gson
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
