@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/close_image_view"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/day_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="THU"
+        android:textColor="@color/md_white_1000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Low"
+                android:textColor="@color/md_white_1000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/low_temperature_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="32\u00B0"
+                android:textColor="@color/md_white_1000"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/weather_image_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_image_size"
+            android:layout_margin="16dp"
+            android:layout_weight="2"
+            android:src="@drawable/sun_01" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="High"
+                android:textColor="@color/md_white_1000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/high_temperature_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="32\u00B0"
+                android:textColor="@color/md_white_1000"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weather_condition_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Thunderstorms"
+        android:textColor="@color/md_white_1000"
+        android:textSize="16sp" />
+
+</LinearLayout>
