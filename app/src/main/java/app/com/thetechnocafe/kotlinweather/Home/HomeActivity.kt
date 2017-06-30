@@ -111,16 +111,16 @@ class HomeActivity : AppCompatActivity(), HomeContract.View {
         val weatherConditionTextView = findViewById(R.id.weather_condition_text_view) as TextView
         val cityNameTextView = findViewById(R.id.city_name_text_view) as TextView
 
-        val formattedTemperatureText = String.format(getString(R.string.celcuis_temperature), weatherData?.query?.results?.channel?.item?.condition?.temp ?: "-")
+        val formattedTemperatureText = String.format(getString(R.string.celcuis_temperature), weatherData?.query?.results?.channel?.item?.condition?.temp ?: "")
 
         temperatureTextView.text = formattedTemperatureText
-        windSpeedTextView.text = "${weatherData?.query?.results?.channel?.wind?.speed ?: "-"} km/h"
-        humidityTextView.text = "${weatherData?.query?.results?.channel?.atmosphere?.humidity ?: "-"} %"
+        windSpeedTextView.text = "${weatherData?.query?.results?.channel?.wind?.speed ?: ""} km/h"
+        humidityTextView.text = "${weatherData?.query?.results?.channel?.atmosphere?.humidity ?: ""} %"
 
         //Set the weather conditions
         val weatherCode = weatherData?.query?.results?.channel?.item?.condition?.code ?: "3200"
         weatherImageView.setImageResource(WeatherToImage.getImageForCode(weatherCode))
-        weatherConditionTextView.text = weatherData?.query?.results?.channel?.item?.condition?.text ?: "-"
+        weatherConditionTextView.text = weatherData?.query?.results?.channel?.item?.condition?.text ?: ""
 
         //Set the name
         val city = weatherData?.query?.results?.channel?.location?.city ?: ""
@@ -171,7 +171,7 @@ class HomeActivity : AppCompatActivity(), HomeContract.View {
     * */
     private fun checkGpsEnabledAndPrompt() {
         //Check if the gps is enabled
-        val isLocationEnabled = mLocationManager!!.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        val isLocationEnabled = mLocationManager!!.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
 
         if (!isLocationEnabled) {
             //Show alert dialog to enable gps

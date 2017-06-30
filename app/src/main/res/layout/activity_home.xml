@@ -53,7 +53,7 @@
                 android:id="@+id/weather_image_view"
                 android:layout_width="@dimen/main_image_size"
                 android:layout_height="@dimen/main_image_size"
-                android:src="@drawable/sun_01" />
+                android:src="@drawable/ic_icon" />
 
             <TextView
                 android:id="@+id/weather_condition_text_view"
@@ -76,7 +76,6 @@
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
-                    android:text="ok"
                     android:textColor="@color/md_white_1000"
                     android:textSize="@dimen/main_text_size" />
 
