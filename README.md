@@ -1,4 +1,4 @@
-# kotlin-weather
+# kotlin-weather [![Build Status](https://travis-ci.org/steverichey/google-play-badge-svg.svg?branch=master)](https://travis-ci.org/steverichey/google-play-badge-svg)
 Simple android weather app developed in kotlin, demonstrating the use of RxJava, Retrofit and implementing MVP.
 
 # Screenshots
