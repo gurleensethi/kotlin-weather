@@ -9,4 +9,3 @@
 .externalNativeBuild
 /app/app-release.apk
 /app/src/main/java/app/com/thetechnocafe/kotlinweather/Secrets.kt
-/app/src/main/java/app/com/thetechnocafe/kotlinweather/.gitignore
